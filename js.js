@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<b>
-<p>
-<h1 style = text-align:center id = "hover1" name="welcum">dennis's site!1</h1>
-<h3 style = text-align:center></h3>
-portfolio and source code for site :) modify as you please
-</h3>
-<br>
-<a href="https://github.com/MiddleAncient"><img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" style="width:50px;height:50px;" target="_blank"></a>
-</p>
-<h2> projects </h2></b>
+welcome = document.getElementById("hover1");
+async function change(){
+setTimeout(function(){
+welcome.style.fontSize = "300%"
+welcome.style.color = 'blue'}, 1000)
+}
+async function change2(){
+welcome.style.fontSize = "200%"
+welcome.style.color = 'grey'
+}
+welcome.addEventListener('mouseenter', (change));
+welcome.addEventListener('mouseleave', (change2));
